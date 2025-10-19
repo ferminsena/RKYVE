@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #265c5e;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.banner {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('someimages/cover.jpg') no-repeat center center/cover;
+    color: white;
+    position: relative;
+}
+
+.banner h1 {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.banner h1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.horizontal-scroll-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: relative;
+    padding: 0 10%;
+    margin: 0 -10%;
+}
+
+.horizontal-scroll img {
+    flex-shrink: 0;
+    width: auto;
+    height: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.horizontal-scroll img.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Arrow buttons */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.arrow.left {
+    left: 5%;
+}
+
+.arrow.right {
+    right: 5%;
+}
+
+.arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.footer {
+    background-color: #1f3b3b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-map {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}

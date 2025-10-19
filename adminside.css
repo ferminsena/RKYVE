@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+body {
+  color: #ffcc00;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.sidebar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+  background: #81b4c1;
+  width: 100px;
+  transition: width 0.4s;
+}
+
+.sidebar nav {
+  padding: 0 8px;
+}
+
+.sidebar:hover {
+  width: 260px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 2%;
+  left: 20px;
+}
+
+.header img {
+  height: 50px;
+}
+
+.header h1 {
+  margin-left: 20px;
+  font-size: 40px;
+  text-align: center;
+  opacity: 0;
+  color: rgba(251, 255, 28);
+}
+
+.sidebar a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 25px;
+  padding: 0 32px;
+  cursor: pointer;
+  opacity: 0.75;
+  color: white;
+}
+
+.sidebar a:hover {
+  background: #0073e6;
+  opacity: 1;
+}
+
+.sidebar a p {
+  position: absolute;
+  top: 50%;
+  left: 70px;
+  translate: 0-50%;
+  color: black;
+  margin: 0%;
+  font-size: 18px;
+  transition: 0.175s;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.sidebar:hover :is(a p, .header h1) {
+  opacity: 1;
+}
+
+#admin-password {
+  text-transform: none;
+}
+
+#admin-username {
+  text-transform: none;
+}

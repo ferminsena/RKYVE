@@ -1,0 +1,116 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding:1px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+}
+
+.footer-section h3 {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-section p {
+  font-size: 12px;
+  line-height: 1.0;
+  text-align: center;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .footer-map a {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-map {
+  margin: 10px auto;
+  display: block;
+  max-width: 100%;
+  border: 1px solid #d4c603;
+}
+
+.footer-map img {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-section .footer-map a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .email {
+  color: #e2cd0f;
+  text-decoration: none;
+}
+
+.footer-section .email:hover {
+  text-decoration: underline;
+}
+
+.footer-section .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-section h4 {
+  text-align: center;
+}
+
+.footer-section .social-icons img {
+  text-align: center;
+  width: 38px;
+  height: 38px;
+}
+
+.footer-bottom {
+display: flex;
+justify-content: center;
+align-items: flex-end;
+font-size: 11px;
+height: 30px;
+}
+
+.footer-text {
+position: fixed;
+font-size: 9px;
+text-align: center;
+}

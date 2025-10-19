@@ -1,0 +1,17 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  overflow: auto;
+  padding: 20px;
+}

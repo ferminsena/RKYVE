@@ -1,0 +1,67 @@
+.status-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.status-checker {
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    font-size: 18px;
+    color: #ffcc00;
+    background: #333;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.close-btn:hover {
+    color: #f00;
+}
+
+.status-form input,
+.status-form button {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btnCheckStatus-popup {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    transition: color 0.3s;
+}
+
+.btnCheckStatus-popup:hover {
+    color: #e2cd0f;
+    font-size: 1.4rem;
+}
